@@ -1,11 +1,19 @@
-function comprar(producto){
+function comprar(producto, precio, imagen){
 
-let numero="51931417388"
+const numero = "51931417388";
 
-let mensaje="Hola, quiero comprar el reloj "+producto
+const urlImagen = "https://tusitio.com/" + imagen;
 
-let url="https://wa.me/"+numero+"?text="+encodeURIComponent(mensaje)
+const mensaje = `Hola, quiero comprar el reloj ${producto}.
+Precio: S/${precio}
 
-window.open(url)
+Imagen del producto:
+${urlImagen}
+
+¿Está disponible?`;
+
+const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+window.open(url, "_blank");
 
 }
