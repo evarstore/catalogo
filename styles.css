@@ -1,5 +1,5 @@
 body{
-background:#0d141d;
+background:#0f1621;
 color:white;
 font-family:Poppins;
 margin:0;
@@ -32,19 +32,18 @@ margin:auto;
 /* tarjeta producto */
 
 .producto{
-background:#161616;
+background:#0b111a;
 border-radius:12px;
+border:1px solid rgba(255,255,255,0.05);
 text-align:center;
 padding-bottom:20px;
 box-shadow:0 10px 25px rgba(0,0,0,0.6);
 position:relative;
 overflow:hidden;
-
-transition:transform 0.35s ease, box-shadow 0.35s ease;
+transition:transform 0.4s ease, box-shadow 0.4s ease;
 }
 .producto:hover{
 transform:translateY(-8px);
-box-shadow:0 18px 40px rgba(0,0,0,0.8);
 }
 
 .destacado{
